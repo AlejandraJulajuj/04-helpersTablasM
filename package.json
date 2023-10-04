@@ -1,0 +1,15 @@
+{
+  "name": "04-helpers",
+  "version": "1.0.0",
+  "description": "App para generar tablas de multiplicar por medio de yargs",
+  "main": "y",
+  "scripts": {
+    "test": "node app"
+  },
+  "author": "Alejandra Gomez",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.5.1"
+  }
+}
