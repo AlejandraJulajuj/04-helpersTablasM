@@ -35,8 +35,10 @@ const crearArchivo=async(base=5,listar=false, hasta=10,)=>{
         }
 
 
-        fs.writeFileSync(`/04-helpers/salida/tabla-${base}.txt`, salida);
-        return `tabla-${base}.txt`;
+        const ruta=`salida/tabla-${base}-hasta-${hasta}.txt`;
+
+        fs.writeFileSync(ruta, limpiarColores(`Tabla del ${base}`));
+        return `tabla-${base}-hasta-${hasta}.txt`;
 
 } catch(err){
     throw err;
